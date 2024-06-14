@@ -27,3 +27,5 @@ Route::get('/test', function () {
 
 
 Route::get('/projects', [ProjectController::class, 'index']);
+
+Route::get('/projects/{project:slug}', [ProjectController::class, 'show']);
